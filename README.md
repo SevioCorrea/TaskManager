@@ -2,7 +2,7 @@
 
 ## Tópicos Abordados
 
-- Integração do Core Data com o ciclo de vida do aplicativo SwiftUI
+- Integração do Core Data com o ciclo de vida do SwiftUI
 - Criação de um widget básico para dispositivos iOS e iPadOS
 - Desenvolvimento de conjuntos de widgets com diferentes tamanhos (pequeno, médio, grande)
 - Criação, leitura, atualização e exclusão de itens do banco de dados (método CRUD)
