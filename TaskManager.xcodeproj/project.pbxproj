@@ -52,6 +52,44 @@
 			path = Sound;
 			sourceTree = "<group>";
 		};
+		222833202A43448D00BC4C11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				226CF6CF2A4200C400DB04D6 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		222833212A4344A500BC4C11 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		222833222A4344B100BC4C11 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		222833232A4344C100BC4C11 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		222833242A4344EB00BC4C11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				226CF6D62A4200C500DB04D6 /* Persistence.swift */,
+				226CF6D82A4200C500DB04D6 /* TaskManager.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		226CF6C12A4200C400DB04D6 = {
 			isa = PBXGroup;
 			children = (
@@ -71,12 +109,14 @@
 		226CF6CC2A4200C400DB04D6 /* TaskManager */ = {
 			isa = PBXGroup;
 			children = (
+				222833202A43448D00BC4C11 /* View */,
+				222833242A4344EB00BC4C11 /* Model */,
+				222833232A4344C100BC4C11 /* Style */,
+				222833222A4344B100BC4C11 /* Utility */,
+				222833212A4344A500BC4C11 /* Extension */,
 				2228331F2A43444A00BC4C11 /* Sound */,
 				226CF6CD2A4200C400DB04D6 /* TaskManagerApp.swift */,
-				226CF6CF2A4200C400DB04D6 /* ContentView.swift */,
 				226CF6D12A4200C500DB04D6 /* Assets.xcassets */,
-				226CF6D62A4200C500DB04D6 /* Persistence.swift */,
-				226CF6D82A4200C500DB04D6 /* TaskManager.xcdatamodeld */,
 				226CF6D32A4200C500DB04D6 /* Preview Content */,
 			);
 			path = TaskManager;
