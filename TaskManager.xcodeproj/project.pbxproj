@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2218AD102A449CD7001410D3 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2218AD0F2A449CD7001410D3 /* HideKeyboardExtension.swift */; };
 		2228331C2A43442600BC4C11 /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 222833192A43442500BC4C11 /* sound-tap.mp3 */; };
 		2228331D2A43442600BC4C11 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2228331A2A43442600BC4C11 /* sound-rise.mp3 */; };
 		2228331E2A43442600BC4C11 /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2228331B2A43442600BC4C11 /* sound-ding.mp3 */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2218AD0F2A449CD7001410D3 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
 		222833192A43442500BC4C11 /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
 		2228331A2A43442600BC4C11 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
 		2228331B2A43442600BC4C11 /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		222833212A4344A500BC4C11 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				2218AD0F2A449CD7001410D3 /* HideKeyboardExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			files = (
 				226CF6D72A4200C500DB04D6 /* Persistence.swift in Sources */,
 				226CF6D02A4200C400DB04D6 /* ContentView.swift in Sources */,
+				2218AD102A449CD7001410D3 /* HideKeyboardExtension.swift in Sources */,
 				22CCE4FC2A4351ED002D7B3D /* Constant.swift in Sources */,
 				226CF6DA2A4200C500DB04D6 /* TaskManager.xcdatamodeld in Sources */,
 				226CF6CE2A4200C400DB04D6 /* TaskManagerApp.swift in Sources */,
