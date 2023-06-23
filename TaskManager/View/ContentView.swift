@@ -62,54 +62,72 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                VStack(spacing: 16) {
-                    TextField("New Task", text: $task)
+            ZStack {
+                VStack {
+                    VStack(spacing: 16) {
+                        TextField("New Task", text: $task)
+                            .padding()
+                            .background(
+                                Color(UIColor.systemGray6)
+                            )
+                            .cornerRadius(10)
+                        
+                        Button(action: {
+                            addItem()
+                        }, label: {
+                            Spacer()
+                            Text("Save")
+                            Spacer()
+                        })
+                        .disabled(isButtonDesabled)
                         .padding()
-                        .background(
-                            Color(UIColor.systemGray6)
-                        )
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .background(isButtonDesabled ? Color.gray : Color.pink)
                         .cornerRadius(10)
-                    
-                    Button(action: {
-                        addItem()
-                    }, label: {
-                        Spacer()
-                        Text("Save")
-                        Spacer()
-                    })
-                    .disabled(isButtonDesabled)
+                    } //: VStack
                     .padding()
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .background(isButtonDesabled ? Color.gray : Color.pink)
-                    .cornerRadius(10)
+                    
+                    List {
+                        ForEach(items) { item in
+                            VStack(alignment: .leading) {
+                                Text(item.task ?? "")
+                                    .font(.headline)
+                                    .fontWeight(.bold)
+                                
+                                Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+                                    .font(.footnote)
+                                    .foregroundColor(.gray)
+                            } // List Item
+                        }
+                        .onDelete(perform: deleteItems)
+                        
+                        if items.isEmpty {
+                            Spacer()
+                                .listRowBackground(Color.clear)
+                        }
+                        
+                    } //: List
+                    .listStyle(InsetGroupedListStyle())
+                    .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.3), radius: 12)
+                    .padding(.vertical, 0)
+                    .frame(maxWidth: 640)
                 } //: VStack
-                .padding()
-                
-                List {
-                    ForEach(items) { item in
-                        VStack(alignment: .leading) {
-                            Text(item.task ?? "")
-                                .font(.headline)
-                                .fontWeight(.bold)
-                            
-                            Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                                .font(.footnote)
-                                .foregroundColor(.gray)
-                        } // List Item
-                    }
-                    .onDelete(perform: deleteItems)
-                } //: List
-            } //: VStack
+            } //: ZStack
+            .scrollContentBackground(.hidden)
+            .background(Color.clear)
             .navigationBarTitle("Daily Tasks", displayMode: .large)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()
                 }
             } //: Toolbar
-            //            Text("Select an item")
+            .background(BackgroundImageView())
+            .background(
+                backgroundGradient.ignoresSafeArea(.all)
+            )
         } //: Navigation
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

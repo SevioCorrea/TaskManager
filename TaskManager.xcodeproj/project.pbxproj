@@ -11,6 +11,7 @@
 		2228331C2A43442600BC4C11 /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 222833192A43442500BC4C11 /* sound-tap.mp3 */; };
 		2228331D2A43442600BC4C11 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2228331A2A43442600BC4C11 /* sound-rise.mp3 */; };
 		2228331E2A43442600BC4C11 /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2228331B2A43442600BC4C11 /* sound-ding.mp3 */; };
+		22389F632A4623B400909437 /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22389F622A4623B400909437 /* BackgroundImageView.swift */; };
 		226CF6CE2A4200C400DB04D6 /* TaskManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CF6CD2A4200C400DB04D6 /* TaskManagerApp.swift */; };
 		226CF6D02A4200C400DB04D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CF6CF2A4200C400DB04D6 /* ContentView.swift */; };
 		226CF6D22A4200C500DB04D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 226CF6D12A4200C500DB04D6 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		222833192A43442500BC4C11 /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
 		2228331A2A43442600BC4C11 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
 		2228331B2A43442600BC4C11 /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
+		22389F622A4623B400909437 /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
 		226CF6CA2A4200C400DB04D6 /* TaskManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		226CF6CD2A4200C400DB04D6 /* TaskManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerApp.swift; sourceTree = "<group>"; };
 		226CF6CF2A4200C400DB04D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				226CF6CF2A4200C400DB04D6 /* ContentView.swift */,
+				22389F622A4623B400909437 /* BackgroundImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				226CF6D72A4200C500DB04D6 /* Persistence.swift in Sources */,
+				22389F632A4623B400909437 /* BackgroundImageView.swift in Sources */,
 				226CF6D02A4200C400DB04D6 /* ContentView.swift in Sources */,
 				2218AD102A449CD7001410D3 /* HideKeyboardExtension.swift in Sources */,
 				22CCE4FC2A4351ED002D7B3D /* Constant.swift in Sources */,
