@@ -95,6 +95,13 @@ struct ContentView: View {
                 
                 // MARK: - New Task Item
                 if showNewTaskItem {
+                    BlankView()
+                        .onTapGesture {
+                            withAnimation() {
+                                showNewTaskItem = false
+                            }
+                        }
+                    
                     NewTaskItemView()
                 }
                 

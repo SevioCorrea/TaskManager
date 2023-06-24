@@ -19,6 +19,7 @@
 		226CF6D72A4200C500DB04D6 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CF6D62A4200C500DB04D6 /* Persistence.swift */; };
 		226CF6DA2A4200C500DB04D6 /* TaskManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 226CF6D82A4200C500DB04D6 /* TaskManager.xcdatamodeld */; };
 		22702DCC2A473FF4000D4723 /* NewTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22702DCB2A473FF4000D4723 /* NewTaskItemView.swift */; };
+		22702DCE2A47487D000D4723 /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22702DCD2A47487D000D4723 /* BlankView.swift */; };
 		22CCE4FC2A4351ED002D7B3D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCE4FB2A4351ED002D7B3D /* Constant.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		226CF6D62A4200C500DB04D6 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		226CF6D92A4200C500DB04D6 /* TaskManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaskManager.xcdatamodel; sourceTree = "<group>"; };
 		22702DCB2A473FF4000D4723 /* NewTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskItemView.swift; sourceTree = "<group>"; };
+		22702DCD2A47487D000D4723 /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
 		22CCE4F62A434657002D7B3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		22CCE4FB2A4351ED002D7B3D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +69,7 @@
 				226CF6CF2A4200C400DB04D6 /* ContentView.swift */,
 				22389F622A4623B400909437 /* BackgroundImageView.swift */,
 				22702DCB2A473FF4000D4723 /* NewTaskItemView.swift */,
+				22702DCD2A47487D000D4723 /* BlankView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				22389F632A4623B400909437 /* BackgroundImageView.swift in Sources */,
 				226CF6D02A4200C400DB04D6 /* ContentView.swift in Sources */,
 				2218AD102A449CD7001410D3 /* HideKeyboardExtension.swift in Sources */,
+				22702DCE2A47487D000D4723 /* BlankView.swift in Sources */,
 				22CCE4FC2A4351ED002D7B3D /* Constant.swift in Sources */,
 				226CF6DA2A4200C500DB04D6 /* TaskManager.xcdatamodeld in Sources */,
 				226CF6CE2A4200C400DB04D6 /* TaskManagerApp.swift in Sources */,
