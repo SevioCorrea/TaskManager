@@ -18,6 +18,7 @@
 		226CF6D52A4200C500DB04D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 226CF6D42A4200C500DB04D6 /* Preview Assets.xcassets */; };
 		226CF6D72A4200C500DB04D6 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226CF6D62A4200C500DB04D6 /* Persistence.swift */; };
 		226CF6DA2A4200C500DB04D6 /* TaskManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 226CF6D82A4200C500DB04D6 /* TaskManager.xcdatamodeld */; };
+		22702DCC2A473FF4000D4723 /* NewTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22702DCB2A473FF4000D4723 /* NewTaskItemView.swift */; };
 		22CCE4FC2A4351ED002D7B3D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CCE4FB2A4351ED002D7B3D /* Constant.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		226CF6D42A4200C500DB04D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		226CF6D62A4200C500DB04D6 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		226CF6D92A4200C500DB04D6 /* TaskManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaskManager.xcdatamodel; sourceTree = "<group>"; };
+		22702DCB2A473FF4000D4723 /* NewTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskItemView.swift; sourceTree = "<group>"; };
 		22CCE4F62A434657002D7B3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		22CCE4FB2A4351ED002D7B3D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +66,7 @@
 			children = (
 				226CF6CF2A4200C400DB04D6 /* ContentView.swift */,
 				22389F622A4623B400909437 /* BackgroundImageView.swift */,
+				22702DCB2A473FF4000D4723 /* NewTaskItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				22CCE4FC2A4351ED002D7B3D /* Constant.swift in Sources */,
 				226CF6DA2A4200C500DB04D6 /* TaskManager.xcdatamodeld in Sources */,
 				226CF6CE2A4200C400DB04D6 /* TaskManagerApp.swift in Sources */,
+				22702DCC2A473FF4000D4723 /* NewTaskItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
