@@ -18,7 +18,7 @@ struct BackgroundImageView: View {
             .scaledToFill()
             .ignoresSafeArea(.all)
             .padding(.trailing, 150)
-            .padding(.bottom, -200)
+//            .padding(.bottom, -200)
     }
 }
 
