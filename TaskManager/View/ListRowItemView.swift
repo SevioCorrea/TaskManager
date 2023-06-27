@@ -20,8 +20,10 @@ struct ListRowItemView: View {
                 .fontWeight(.heavy)
                 .foregroundColor(item.completion ? Color.pink : Color.primary)
                 .padding(.vertical, 12)
-                .animation(.default)
+//                .animation(.default)
+                .animation(.default, value: item.task)
         } //: Toggle
+        .toggleStyle(CheckboxStyle())
         .onReceive(item.objectWillChange, perform: { _ in
             if self.viewContext.hasChanges {
                 try? self.viewContext.save()
