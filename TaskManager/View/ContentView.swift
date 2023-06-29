@@ -13,6 +13,8 @@ struct ContentView: View {
     @State var task: String = ""
     @State private var showNewTaskItem: Bool = false
     
+    @State private var animationOffset: CGFloat = 0.5
+    
     @AppStorage("isDarkMode") private var isDarkMode: Bool = false
     
     // Fetching Data
@@ -69,6 +71,7 @@ struct ContentView: View {
                         Button(action: {
                             // Toggle Appearance
                             isDarkMode.toggle()
+                            playSound(sound: "sound-tap", type: "mp3")
                         }, label: {
 //                            Image(systemName: isDarkMode ? "moon.circle.fill" : "moon.circle")
                             Image(systemName: isDarkMode ? "moon.circle.fill" : "sun.max.circle.fill")
@@ -87,6 +90,7 @@ struct ContentView: View {
                     // MARK: - New Task Button
                     Button(action: {
                         showNewTaskItem = true
+                        playSound(sound: "sound-ding", type: "mp3")
                     }, label: {
                         Image(systemName: "plus.circle")
                             .font(.system(size: 30, weight: .semibold, design: .rounded))
@@ -123,7 +127,7 @@ struct ContentView: View {
                 } //: VStack
                 .blur(radius: showNewTaskItem ? 8.0 : 0, opaque: false)
                 .transition(.move(edge: .bottom))
-                .animation(.easeOut(duration: 0.5))
+                .animation(.easeOut(duration: 0.5), value: animationOffset)
                 
                 // MARK: - New Task Item
                 if showNewTaskItem {
@@ -148,7 +152,7 @@ struct ContentView: View {
             .background(
                 BackgroundImageView()
                     .blur(radius: showNewTaskItem ? 8.0 : 0, opaque: false)
-                    .animation(.easeOut(duration: 0.5))
+                    .animation(.easeOut(duration: 0.5), value: animationOffset)
             )
             .background(
                 backgroundGradient.ignoresSafeArea(.all)
